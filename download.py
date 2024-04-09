@@ -13,7 +13,7 @@ r2_endpoint_url = 'https://<r2-region>.r2.cloudflarestorage.com'
 session = boto3.session.Session()
 s3 = session.client(
     service_name='s3',
-    endpoint_url=r2_endpoint_url,  #
+    endpoint_url=r2_endpoint_url,
     aws_access_key_id=access_key,
     aws_secret_access_key=secret_key
 )
